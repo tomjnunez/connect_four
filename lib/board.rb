@@ -1,6 +1,6 @@
 class Board
   attr_reader :board_grid
-  def initialize
+  def initialize(board_grid)
     @greeting_message = "Welcome to Connect Four the game!"
     @board_grid = [["A", ".", ".", ".", ".", ".", "."],
                 ["B", ".", ".", ".", ".", ".", "."],
@@ -21,6 +21,4 @@ class Board
       puts line.each { |p| p}.join(" ")
     end
   end
-
-  
 end
